@@ -1,0 +1,279 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowsys</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <style>
+      p {
+        font-size: 1.2em;
+      }
+
+      #article {
+        /*border: 4px dotted blue;*/
+      }
+      .grey {
+        color: rgba(0,0,0,0.2);
+      }
+      .dark {
+        color: rgba(0,0,0,1.0)!important;
+        /*font-size: 1.6em;*/
+
+      }
+
+      * {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+      }
+
+      .row {
+        width: 50em;
+        margin: 0 auto;
+      }
+
+      button {
+        border-radius: 50px;
+        height: 100px;
+        width: 100px;
+        padding: 0;
+        background: rgba(0,0,0,0.2);
+        -webkit-transition: all 0.0s ease!important;
+        outline: none;
+      }
+
+      button:hover{
+        background: rgba(0,0,0,0.7);
+      }
+
+      #experience {
+        position: fixed;
+        top: 0 ;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+
+        display: -webkit-flexbox;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        text-align: center;
+
+        font-size: 8.0em;
+
+      }
+      .text-center {
+        text-align: center!important;
+        width: 100%;
+      }
+
+      .text-grey {
+        color: rgba(0,0,0,0.3);
+      }
+
+      .text-black {
+        color: rgba(0,0,0,1.0);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="row" style="position:fixed;top:0;left;0 ">
+      
+      <br />
+
+      <div class="large-12 columns">
+          <button id="activate">Activate</button>
+          <button id="activateReader" style="display:none">Run</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Reading on the Clock</h1>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row">
+      <div class="large-12 medium-12 columns" id="article">
+        <p>When I was assigned to read “Anna Karenina” during the summer before my senior year of high school, I had no idea how long it would take. Daunted by its length, and by the challenge of telling my Alexei Alexandroviches from my Alexei Kirilloviches, I put off reading it and put off reading it until, by the end of August— having only reached the beginning of Anna and Vronsky’s affair— I knew I wouldn’t be near finished by the time school started up again.</p>
+        <p>This “miscalculation” was mainly the result of procrastination, but also maybe the tiniest bit a problem of technology: back then, in the pre-digital age, physical books had a somewhat vague relationship to time. If you were a lazy teen-ager with an eight-hundred-and-fifty-page tome to get through, this nebulousness could work against you. It could also provide one of reading’s greatest pleasures: the feeling of getting so sucked into a fictional world that when you finally looked up from your book, dazed, you’d lost all sense of how much time had passed.</p>
+        <p>As we’ve transitioned from print to screens, we’ve started clocking how long reading takes: Kindles track the “time left” in the books we’re reading; Web sites like Longreads and Medium include similar estimates with their articles (total reading time for “Anna Karenina”: eighteen hours and twenty-two minutes); in June, Alexis Ohanian, a co-founder of Reddit, published a book with a stamp on the cover advertising it as a “5 hour read.” These features all feel a bit dystopian, like things Gary Shteyngart might have invented for his futuristic äppärät devices in “Super Sad True Love Story”; if Jonathan Franzen’s next novel gets stamped with a “10 hour read” label, it will confirm all his worst suspicions about what’s wrong with the modern world. But the fact is that little of what we read on the Web today is formatted in discrete pages, so it seems logical that, as reading online continues to supplant reading in print, hours and minutes will become increasingly useful units for measuring our progress.</p>
+        <p>In Kiev, Ukraine's parliament met behind closed doors. At the closing of the session, acting Defense Minister Ihor Tenyuh said Ukraine does not have the military force to resist Russia, according to two parliamentary members present at the meeting. Tenyuh called for talks to resolve the crisis with Russia, they said.</p>
+        <p>The Ukrainian National Security Council has ordered the mobilization of troops as Russian President Vladimir Putin appeared to dismiss warnings from world leaders to avoid military intervention in Crimea, a senior Ukrainian official, Andriy Parubiy, said.</p>
+        <p>I would never want to read literary fiction, or poetry, or even most kinds of longform nonfiction with R.S.V.P. If I ever read “Anna Karenina” in full, it will not be the strobe-light edition. With the daily inundation of job-related reading material I always struggle to keep on top of, though, it’s kind of comforting to have a program that allows me to churn and burn. Part of being a happy reader, after all, is accepting that not all reading is for sheer pleasure, and then making time in your life for the kind that is.</p>
+
+ 
+      </div>
+    </div>
+    
+    <div id="experience" style="display:none">
+      <div class='text-center'  >
+        <div class="text-center large-12 columns">
+        <span class="text-grey" id="experience-1-text"></span>
+        </div>
+        <div class="text-center large-12 columns">
+         <span class="text-grey" id="experience-2-text" ></span>
+        </div>
+        <div class="text-center large-12 columns">
+         <span class="text-black" id="experience-3-text" ></span> 
+        </div>
+        <div class="text-center large-12 columns">
+         <span class="text-grey" id="experience-4-text" ></span>
+        </div>
+        <div class="text-center large-12 columns">
+         <span class="text-grey" id="experience-5-text" ></span>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+
+      $(document).ready(function(){
+
+
+        var art = document.getElementById('article');
+
+        var originalHTML = [];
+
+        function splitArticle(action) {
+
+          $("#article p").each(function(i, value){
+
+            var html = "";
+            
+
+            html = value.innerHTML;
+
+            //split
+            html = html.split(" ");
+
+            if(action == 'highlight') {
+
+              originalHTML[i] = value.innerHTML;
+
+              if(i==0) {
+                // Highlight FirstSentence
+                highlightFirstSentence(html);
+              }
+
+              // // Highlight Last Sentence
+              highlightLastSentence(html);
+
+              $("#article").addClass('grey');
+
+              // Unsplit
+              var newHTML = "";
+              for(var i = 0; i < html.length; i++) {
+                  newHTML += html[i] + " "; 
+              }
+              value.innerHTML = newHTML;
+            }
+
+            if(action == 'run') {
+              runApp(originalHTML[i]);
+            }
+
+          });
+
+        };
+
+        function runApp(orHT) {
+          $("#experience").show();
+
+          var textArray = orHT.split(" ");
+
+          var xx = 0;
+
+          setInterval(function() { 
+
+            $("#experience-1-text").html(textArray[xx-2]);
+            $("#experience-2-text").html(textArray[xx-1]);
+            $("#experience-3-text").html(textArray[xx]);
+            $("#experience-4-text").html(textArray[xx+1]);
+            $("#experience-5-text").html(textArray[xx+2]);
+
+            xx+= 1;
+
+          }, 250);
+        
+        };
+
+
+       
+
+        function highlightFirstSentence(array) {
+
+          for(var x=0; x < array.length; x++ ) {
+
+            var lastChar = array[x][array[x].length-1];
+            
+            if(lastChar === '.' || lastChar === ':' || lastChar === '—' ) {
+              array[x] = darken(array[x]);
+              break;
+            }
+
+            array[x] = darken(array[x]);
+          }
+
+          return array
+
+        };
+
+        function darken(text){
+          return '<span class="dark" >' + text + '</span>';
+        }
+
+        function highlightLastSentence(array) {
+          for (var x = array.length; x>= 0; x--) {
+            if (x === array.length-1) {
+              array[x] = darken(array[x]);
+            } else {
+              if (!array[x]){
+
+              } else {
+                var lastChar = array[x][array[x].length-1];
+                if(lastChar == '.' || lastChar === ':' || lastChar === '—') {
+                  break;
+                }
+
+                array[x] = darken(array[x]);
+
+              }
+
+            }
+          }
+          // console.log(html);
+
+        };
+
+        $("#activate").on('click', function(){
+          splitArticle('highlight');
+          $(this).hide();
+          $("#activateReader").show();
+        });
+        
+        $("#activateReader").on('click', function(){
+
+          splitArticle('run');
+
+        });
+
+
+
+      });
+
+    </script>
+  </body>
+</html>
